@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import AboutAvatar from "../AboutAvatar.jpeg";
+import { SectionTitle } from "./UI";
+---
+
+<section id="about" class="w-full min-h-screen px-6 py-4 pt-14 bg-background">
+    <SectionTitle
+        title="About Me"
+        color="primary"
+        className="min-h-screen h-fit flex flex-col justify-center"
+    >
+        <div class="flex_center flex-col lg:flex-row w-full h-full py-10 gap-8">
+            <Image
+                src={AboutAvatar}
+                alt="About_Avatar"
+                class="Fade_Up rounded-full lg:mx-14 object-cover w-[180px] lg:w-[225px] h-[180px] lg:h-[225px]"
+                width={225}
+                height={225}
+                loading="lazy"
+            />
+
+            <div
+                class="Fade_Up w-full md:w-[80%] lg:w-[60%] flex justify-center items-start flex-col gap-4 lg:border-l border-primary py-8 lg:pl-10"
+            >
+                <h2 class="Fade_Up text-[1.5em] font-bold">Hey there! 👋🏻</h2>
+                <p class="Fade_Up text-justify">
+                    I'm G V Pranav Sharma, a Machine Learning and Full-Stack Developer with hands-on experience building ML models, backend systems, and data-driven applications.
+                </p>
+                <p class="Fade_Up text-justify">
+                    I have a strong foundation in Python, ML algorithms, and web technologies with proven performance in hackathons and academic projects.
+                    Currently pursuing B.Tech in Computer Science with a specialization in E-commerce and technology at VIT Bhopal University.
+                </p>
+                <p class="Fade_Up text-justify">
+                    If you're seeking a dedicated and passionate developer,
+                    I'm eager to collaborate with you. Let's bring your ideas to
+                    life!
+                </p>
+            </div>
+        </div>
+
+        <!-- <picture class="flex_center">
+            <source
+                media="(prefers-color-scheme: dark)"
+                srcset="https://raw.githubusercontent.com/PranavSharma717/PranavSharma717/output/github-contribution-grid-snake-dark.svg"
+            />
+            <img
+                alt="github contribution grid snake animation"
+                src="https://raw.githubusercontent.com/PranavSharma717/PranavSharma717/output/github-contribution-grid-snake.svg"
+            />
+        </picture> -->
+    </SectionTitle>
+</section>

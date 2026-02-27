@@ -3,6 +3,8 @@ import { Image } from "astro:assets";
 import {
     GithubIcon,
     LinkedinIcon,
+    DiscordIcon,
+    InstagramIcon,
 } from "../assets/SVGs";
 
 const currentYear = new Date().getFullYear();
@@ -37,22 +39,61 @@ const currentYear = new Date().getFullYear();
         <span>G V Pranav Sharma | Portfolio</span>
     </div>
 
-    <div class="grid grid-cols-3 lg:grid-cols-6 gap-x-20 gap-y-10 lg:gap-20">
+    <div class="flex flex-wrap justify-center gap-6 md:gap-12 lg:gap-20">
         <a
             href="https://in.linkedin.com/in/g-v-pranav-sharma"
             target="_blank"
             rel="noreferrer"
         >
-            <Image src={LinkedinIcon} alt="Discord" width={30} height={30} />
+            <Image src={LinkedinIcon} alt="LinkedIn" width={30} height={30} />
         </a>
         <a
-            href="https://github.com/PranavSharma717"
+            href="https://github.com/Pranav-Sharma717"
             target="_blank"
             rel="noreferrer"
         >
-            <Image src={GithubIcon} alt="Discord" width={30} height={30} />
+            <Image src={GithubIcon} alt="GitHub" width={30} height={30} />
+        </a>
+        <a
+            href="https://discordapp.com/users/parzival7890"
+            title="Discord"
+            target="_blank"
+            rel="noreferrer"
+        >
+            <Image src={DiscordIcon} alt="Discord" width={30} height={30} />
+        </a>
+        <a
+            href="https://www.instagram.com/17_7pranav/"
+            title="Instagram"
+            target="_blank"
+            rel="noreferrer"
+        >
+            <Image src={InstagramIcon} alt="Instagram" width={30} height={30} />
+        </a>
+        <a
+            href="mailto:gpranav06@gmail.com"
+            title="Gmail"
+            target="_blank"
+            rel="noreferrer"
+        >
+            <svg
+                stroke="currentColor"
+                fill="currentColor"
+                style="color: var(--text);"
+                stroke-width="0"
+                role="img"
+                viewBox="0 0 24 24"
+                height="30"
+                width="30"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+                >
+                </path>
+            </svg>
         </a>
     </div>
 
-    <span>© Copyright 2023-{currentYear} G V Pranav Sharma</span>
+    <span>© Copyright 2025-{currentYear} G V Pranav Sharma</span>
 </footer>

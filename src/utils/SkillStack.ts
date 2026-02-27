@@ -13,6 +13,7 @@ import {
     CppIcon,
     GitIcon,
     VsCodeIcon,
+    AstroIcon,
 } from "../assets/Icons";
 import { GithubIcon } from "../assets/SVGs";
 
@@ -34,6 +35,7 @@ export const FrontendStack = [
     },
     { name: "React.js", icon: ReactIcon, link: "https://react.dev/" },
     { name: "Tailwind", icon: TailwindIcon, link: "https://tailwindcss.com/" },
+    { name: "Astro", icon: AstroIcon, link: "https://astro.build/" },
 ];
 
 export const BackendStack = [

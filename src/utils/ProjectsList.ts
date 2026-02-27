@@ -130,33 +130,6 @@ const FeatureList = {
 
 export const ProjectsList: ProjectsListType = [
     {
-        Name: "Traffic Sign Recognition",
-        ShortDesc: "Built a Convolutional Neural Network for traffic sign classification using the GTSRB dataset (43 classes, 50k+ images). Achieved 98% test accuracy.",
-        Desc: "Built a Convolutional Neural Network (CNN) for traffic sign classification using the GTSRB dataset (43 classes, 50,000+ images).  The model achieved 98% test accuracy, outperforming baseline models, demonstrating proficiency in Deep Learning and Computer Vision.",
-        Logo: VortexaLogo, // Placeholder
-        Shot: VortexaShots, // Placeholder
-        Mockup: VortexaMockup, // Placeholder
-        Theme: "#fff",
-        Status: "completed",
-        Link: "#",
-        Source: "#",
-        Tech: [TechInfo.Python, TechInfo.RestApi], // Using available icons, approximating CNN/PyTorch with Python
-        features: [
-            {
-                title: "High Accuracy",
-                description: "Achieved 98% test accuracy on the GTSRB dataset."
-            },
-            {
-                title: "Deep Learning",
-                description: "Implemented using Convolutional Neural Networks (CNNs) for robust image classification."
-            },
-            FeatureList.Responsive
-        ],
-        hideProject: false,
-        LogoSize: 50,
-        versions: []
-    },
-    {
         Name: "Product Rec. System",
         ShortDesc: "Boosted user engagement and sales by creating a machine learning product recommendation system that delivered personalized suggestions.",
         Desc: "Developed a Product Recommendation System for an E-commerce website. This system boosted user engagement and sales by leveraging machine learning algorithms to deliver personalized product suggestions to users based on their behavior and preferences.",
@@ -166,7 +139,7 @@ export const ProjectsList: ProjectsListType = [
         Theme: "#090b0b",
         Status: "completed",
         Link: "#",
-        Source: "#",
+        Source: "https://github.com/Pranav-Sharma717/E-commerce_Recommendation_System",
         Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.Python, TechInfo.Flask],
         features: [
             {
@@ -193,7 +166,7 @@ export const ProjectsList: ProjectsListType = [
         Theme: "#FFF",
         Status: "completed",
         Link: "#",
-        Source: "#",
+        Source: "https://github.com/Pranav-Sharma717/finsage",
         Tech: [TechInfo.Python, TechInfo.Flask, TechInfo.RestApi], // Approximating NLP/LLM
         features: [
             {
@@ -203,6 +176,126 @@ export const ProjectsList: ProjectsListType = [
             {
                 title: "Personalized Guidance",
                 description: "Provides tailored financial advice, including tax planning and asset allocation."
+            },
+            FeatureList.Responsive
+        ],
+        hideProject: false,
+        LogoSize: 50,
+        versions: []
+    },
+    {
+        Name: "Traffic Sign Recognition",
+        ShortDesc: "Built a Convolutional Neural Network for traffic sign classification using the GTSRB dataset (43 classes, 50k+ images). Achieved 98% test accuracy.",
+        Desc: "Built a Convolutional Neural Network (CNN) for traffic sign classification using the GTSRB dataset (43 classes, 50,000+ images).  The model achieved 98% test accuracy, outperforming baseline models, demonstrating proficiency in Deep Learning and Computer Vision.",
+        Logo: VortexaLogo, // Placeholder
+        Shot: VortexaShots, // Placeholder
+        Mockup: VortexaMockup, // Placeholder
+        Theme: "#fff",
+        Status: "completed",
+        Link: "#",
+        Source: "https://github.com/Pranav-Sharma717/Traffic-sign-classifier",
+        Tech: [TechInfo.Python, TechInfo.RestApi], // Using available icons, approximating CNN/PyTorch with Python
+        features: [
+            {
+                title: "High Accuracy",
+                description: "Achieved 98% test accuracy on the GTSRB dataset."
+            },
+            {
+                title: "Deep Learning",
+                description: "Implemented using Convolutional Neural Networks (CNNs) for robust image classification."
+            },
+            FeatureList.Responsive
+        ],
+        hideProject: false,
+        LogoSize: 50,
+        versions: []
+    },
+    {
+        Name: "Smartupcycle",
+        ShortDesc: "A full-stack web platform for upcycling ideas, analyzing carbon footprint, and sharing DIY creations.",
+        Desc: "smartUpCycle is a full-stack web platform that:\n\nSuggests upcycling ideas from common waste items.\nAnalyzes your personal carbon footprint.\nLets users post and showcase their DIY upcycled creations.\nEncourages sustainable behavior through community and gamification.",
+        Logo: NextmartLogo, // Placeholder
+        Shot: NextmartShots, // Placeholder
+        Mockup: ARMSv3Mockup, // Placeholder
+        Theme: "#22c55e",
+        Status: "completed",
+        Link: "#",
+        Source: "https://github.com/Pranav-Sharma717/smartUpCycle1",
+        Tech: [TechInfo.React, TechInfo.Node, TechInfo.MongoDB, TechInfo.TailwindCSS],
+        features: [
+            {
+                title: "Upcycling Ideas",
+                description: "Suggests upcycling ideas from common waste items."
+            },
+            {
+                title: "Carbon Footprint",
+                description: "Analyzes your personal carbon footprint."
+            },
+            {
+                title: "Showcase DIY",
+                description: "Lets users post and showcase their DIY upcycled creations."
+            },
+            {
+                title: "Gamification",
+                description: "Encourages sustainable behavior through community and gamification."
+            },
+            FeatureList.Responsive
+        ],
+        hideProject: false,
+        LogoSize: 45,
+        versions: []
+    },
+    {
+        Name: "Coding Puzzles",
+        ShortDesc: "A revolutionary platform for coding enthusiasts, offering interactive visualizations and beginner-friendly articles.",
+        Desc: "A revolutionary platform for coding enthusiasts, problem solvers, and anyone eager to unlock the mysteries of efficient programming. Coding Puzzles isn’t just a tool; it’s a teacher. With every feature, we aim to remove intimidation from coding and replace it with confidence.",
+        Logo: ArmsLogo, // Placeholder
+        Shot: Armsv3Shots, // Placeholder
+        Mockup: ARMSv3Mockup, // Placeholder
+        Theme: "#3b82f6",
+        Status: "completed",
+        Link: "#",
+        Source: "https://github.com/Pranav-Sharma717/HackathonProject",
+        Tech: [TechInfo.Next, TechInfo.TypeScript, TechInfo.TailwindCSS],
+        features: [
+            {
+                title: "Interactive Visualizations",
+                description: "Simplifies complex algorithms with interactive visualizations."
+            },
+            {
+                title: "Beginner-friendly Articles",
+                description: "Breaks down coding puzzles into easy-to-understand concepts."
+            },
+            {
+                title: "Example Codes",
+                description: "Bridges the gap between theory and application."
+            },
+            FeatureList.Responsive
+        ],
+        hideProject: false,
+        LogoSize: 45,
+        versions: []
+    },
+    {
+        Name: "Text to Handwritten",
+        ShortDesc: "A Python tool that converts typed text into a handwritten document.",
+        Desc: "A simple yet powerful tool built using Python to convert digital text into a handwritten format. It makes creating assignments and creative documents easier by producing a natural handwriting aesthetic from any provided text.",
+        Logo: VortexaLogo, // Placeholder
+        Shot: VortexaShots, // Placeholder
+        Mockup: VortexaMockup, // Placeholder
+        Theme: "#f59e0b",
+        Status: "completed",
+        Link: "#",
+        Source: "https://github.com/Pranav-Sharma717/Text-To-Handwritten",
+        Tech: [TechInfo.Python],
+        features: [
+            {
+                title: "Handwriting Generation",
+                description: "Accurately maps digital text formats to a realistic handwriting representation."
+            },
+            {
+                title: "Python Powered",
+                description: "Utilizes Python libraries for fast and seamless conversion."
             },
             FeatureList.Responsive
         ],

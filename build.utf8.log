@@ -1,0 +1,145 @@
+﻿
+> portfolio@1.0.3 build
+> astro check && astro build
+
+11:53:12 [content] Syncing content
+11:53:12 [content] Synced content
+11:53:12 [types] Generated 59ms
+11:53:12 [check] Getting diagnostics for Astro files in C:\Users\gvpra\Downloads\Pranav_portfolio_Website...
+Result (37 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+11:53:19 [content] Syncing content
+11:53:19 [content] Synced content
+11:53:19 [types] Generated 59ms
+11:53:19 [build] output: "static"
+11:53:19 [build] mode: "static"
+11:53:19 [build] directory: C:\Users\gvpra\Downloads\Pranav_portfolio_Website\dist\
+11:53:19 [build] Collecting build info...
+11:53:19 [build] Γ£ô Completed in 144ms.
+11:53:19 [build] Building static entrypoints...
+node.exe : 
+Browserslist: 
+browsers data 
+(caniuse-lite) is 12 
+months old. Please 
+run:
+At C:\Program Files\no
+dejs\npm.ps1:29 char:3
++   & $NODE_EXE 
+$NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (Browsersli   
+ st: b...ld. Pleas    
+e run::String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+  npx update-browsersl
+ist-db@latest
+  Why you should do 
+it regularly: https://
+github.com/browserslis
+t/update-db#readme
+11:53:21 [vite] [32mΓ£ô built in 2.23s[39m
+11:53:21 [build] Γ£ô Completed in 2.26s.
+
+ building client (vite) 
+11:53:21 [vite] transforming...
+11:53:22 [vite] [32mΓ£ô[39m 41 modules transformed.
+11:53:22 [vite] rendering chunks...
+11:53:22 [vite] computing gzip size...
+11:53:22 [vite] [2mdist/[22m[36m_astro/ProjectLayout.astro_astro_type_script_index_0_lang.Bw6qls11.js  [39m[1m[2m  0.07 kB[22m[1m[22m[2m Γöé gzip:  0.08 kB[22m
+11:53:22 [vite] [2mdist/[22m[36m_astro/client.wIg91ANj.js                                              [39m[1m[2m  2.17 kB[22m[1m[22m[2m Γöé gzip:  1.19 kB[22m
+11:53:22 [vite] [2mdist/[22m[36m_astro/hooks.module.EAQpi42h.js                                        [39m[1m[2m  2.62 kB[22m[1m[22m[2m Γöé gzip:  1.16 kB[22m
+11:53:22 [vite] [2mdist/[22m[36m_astro/signals.module.DbpmUP0S.js                                      [39m[1m[2m  6.81 kB[22m[1m[22m[2m Γöé gzip:  2.59 kB[22m
+11:53:22 [vite] [2mdist/[22m[36m_astro/Preact.Ddy_2uI1.js                                              [39m[1m[2m  6.86 kB[22m[1m[22m[2m Γöé gzip:  2.76 kB[22m
+11:53:22 [vite] [2mdist/[22m[36m_astro/preact.module.xc0zIhQ1.js                                       [39m[1m[2m 10.41 kB[22m[1m[22m[2m Γöé gzip:  4.42 kB[22m
+11:53:22 [vite] [2mdist/[22m[36m_astro/Layout.astro_astro_type_script_index_0_lang.Cr64bDy5.js         [39m[1m[2m127.88 kB[22m[1m[22m[2m Γöé gzip: 49.02 kB[22m
+11:53:22 [vite] [32mΓ£ô built in 600ms[39m
+
+ generating static routes 
+11:53:22 Γû╢ src/pages/projects/[projectID].astro
+Cannot read 
+properties of 
+undefined (reading 
+'Name')
+  Stack trace:
+    at file:///C:/User
+s/gvpra/Downloads/Pran
+av_portfolio_Website/d
+ist/pages/projects/_pr
+ojectid_.astro.mjs?tim
+e=1772173402168:41:151
+9
+    at async 
+renderToString (file:/
+//C:/Users/gvpra/Downl
+oads/Pranav_portfolio_
+Website/node_modules/a
+stro/dist/runtime/serv
+er/render/astro/render
+.js:9:26)
+    at async lastNext 
+(file:///C:/Users/gvpr
+a/Downloads/Pranav_por
+tfolio_Website/node_mo
+dules/astro/dist/core/
+render-context.js:184:
+25)
+    at async 
+callMiddleware (file:/
+//C:/Users/gvpra/Downl
+oads/Pranav_portfolio_
+Website/node_modules/a
+stro/dist/core/middlew
+are/callMiddleware.js:
+11:10)
+    at async 
+generatePath (file:///
+C:/Users/gvpra/Downloa
+ds/Pranav_portfolio_We
+bsite/node_modules/ast
+ro/dist/core/build/gen
+erate.js:316:16)
+    at async 
+generatePage (file:///
+C:/Users/gvpra/Downloa
+ds/Pranav_portfolio_We
+bsite/node_modules/ast
+ro/dist/core/build/gen
+erate.js:167:9)
+    at async 
+staticBuild (file:///C
+:/Users/gvpra/Download
+s/Pranav_portfolio_Web
+site/node_modules/astr
+o/dist/core/build/stat
+ic-build.js:84:5)
+    at async 
+AstroBuilder.run (file
+:///C:/Users/gvpra/Dow
+nloads/Pranav_portfoli
+o_Website/node_modules
+/astro/dist/core/build
+/index.js:186:7)
+    at async build (fi
+le:///C:/Users/gvpra/D
+ownloads/Pranav_portfo
+lio_Website/node_modul
+es/astro/dist/cli/buil
+d/index.js:29:3)
+    at async cli (file
+:///C:/Users/gvpra/Dow
+nloads/Pranav_portfoli
+o_Website/node_modules
+/astro/dist/cli/index.
+js:175:5)
+11:53:22   Γö£ΓöÇ /projects/arms-v3/index.html

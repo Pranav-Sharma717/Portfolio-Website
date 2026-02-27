@@ -1,0 +1,120 @@
+---
+---
+
+<div id="terminal-loader" class="terminal-loader">
+  <div class="terminal-content">
+    <span id="terminal-text"></span><span class="cursor">_</span>
+  </div>
+</div>
+
+<style>
+  .terminal-loader {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    background-color: #000;
+    z-index: 100000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 10%;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  }
+  .terminal-loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .terminal-content {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 800px;
+    width: 100%;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.4);
+    word-break: break-word;
+  }
+  .cursor {
+    animation: blink 1s step-end infinite;
+    font-weight: bold;
+  }
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  
+  /* Mobile compatibility */
+  @media (max-width: 640px) {
+    .terminal-content {
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+    .terminal-loader {
+      padding: 1.5rem;
+      align-items: flex-start;
+      margin-top: 20vh;
+    }
+  }
+</style>
+
+<script>
+  const textToType = `Welcome to my portfolio!\nHave a question, an idea, or a challenge to solve? Let’s connect — I’m always up for building impactful solutions.`;
+  const textElement = document.getElementById("terminal-text");
+  const loader = document.getElementById("terminal-loader");
+  
+  let i = 0;
+  let typingFinished = false;
+  let pageLoaded = false;
+  let slowLoadTimeout: ReturnType<typeof setTimeout>;
+
+  // Function to hide loader
+  const hideLoader = () => {
+    if (typingFinished && pageLoaded && loader) {
+       // A small delay to let user see the final state if it just finished typing
+       setTimeout(() => {
+          loader.classList.add("hidden");
+       }, 500);
+    }
+  };
+
+  const typeWriter = () => {
+    if (i < textToType.length && textElement) {
+      // Append characters, handling newlines properly
+      textElement.innerHTML += textToType.charAt(i) === '\n' ? '<br/><br/>' : textToType.charAt(i);
+      i++;
+      setTimeout(typeWriter, 25); // Speed of typing
+    } else {
+      typingFinished = true;
+      
+      // If page is still not loaded after typing finished, show "loading.."
+      if (!pageLoaded && textElement) {
+         slowLoadTimeout = setTimeout(() => {
+            if (!pageLoaded) {
+               textElement.innerHTML += '<br/><br/>loading..';
+            }
+         }, 800); // show "loading.." slightly after typing finishes if still waiting
+      }
+      
+      hideLoader();
+    }
+  };
+
+  // Prevent scrolling while loading
+  document.body.style.overflow = "hidden";
+  
+  // Start typing
+  if (textElement) {
+    typeWriter();
+  } else {
+    typingFinished = true;
+  }
+
+  // Handle window load
+  window.addEventListener("load", () => {
+    pageLoaded = true;
+    document.body.style.overflow = ""; // reset overflow
+    if (slowLoadTimeout) clearTimeout(slowLoadTimeout);
+    hideLoader();
+  });
+</script>

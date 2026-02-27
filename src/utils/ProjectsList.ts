@@ -8,7 +8,7 @@ import {
 } from "../assets/Logos"
 
 import {
-    NextmartShots, Armsv3Shots, VortexaShots
+    NextmartShots, Armsv3Shots, VortexaShots, EcommerceRecShots
 } from "../assets/Shots"
 
 import {
@@ -134,7 +134,7 @@ export const ProjectsList: ProjectsListType = [
         ShortDesc: "Boosted user engagement and sales by creating a machine learning product recommendation system that delivered personalized suggestions.",
         Desc: "Developed a Product Recommendation System for an E-commerce website. This system boosted user engagement and sales by leveraging machine learning algorithms to deliver personalized product suggestions to users based on their behavior and preferences.",
         Logo: NextmartLogo, // Placeholder
-        Shot: NextmartShots, // Placeholder
+        Shot: EcommerceRecShots,
         Mockup: ARMSv3Mockup, // Placeholder
         Theme: "#090b0b",
         Status: "completed",

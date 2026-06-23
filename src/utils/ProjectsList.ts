@@ -147,7 +147,7 @@ export const ProjectsList: ProjectsListType = [
         Mockup: PotholeMockup,
         Theme: "#8B4513",
         Status: "completed",
-        Link: "#",
+        Link: "https://github.com/Pranav-Sharma717/Pothole_Detection",
         Source: "https://github.com/Pranav-Sharma717/Pothole_Detection",
         Tech: [TechInfo.Python, TechInfo.RestApi, TechInfo.Html, TechInfo.Css, TechInfo.JavaScript],
         features: [
@@ -174,7 +174,7 @@ export const ProjectsList: ProjectsListType = [
         Mockup: ProductRecMockup,
         Theme: "#090b0b",
         Status: "completed",
-        Link: "#",
+        Link: "https://github.com/Pranav-Sharma717/E-commerce_Recommendation_System",
         Source: "https://github.com/Pranav-Sharma717/E-commerce_Recommendation_System",
         Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.Python, TechInfo.Flask],
         features: [
@@ -201,7 +201,7 @@ export const ProjectsList: ProjectsListType = [
         Mockup: FinSageMockup,
         Theme: "#FFF",
         Status: "completed",
-        Link: "#",
+        Link: "https://github.com/Pranav-Sharma717/finsage",
         Source: "https://github.com/Pranav-Sharma717/finsage",
         Tech: [TechInfo.Python, TechInfo.Flask, TechInfo.RestApi], // Approximating NLP/LLM
         features: [
@@ -228,7 +228,7 @@ export const ProjectsList: ProjectsListType = [
         Mockup: TrafficSignMockup,
         Theme: "#fff",
         Status: "completed",
-        Link: "#",
+        Link: "https://github.com/Pranav-Sharma717/Traffic-sign-classifier",
         Source: "https://github.com/Pranav-Sharma717/Traffic-sign-classifier",
         Tech: [TechInfo.Python, TechInfo.RestApi], // Using available icons, approximating CNN/PyTorch with Python
         features: [
@@ -255,7 +255,7 @@ export const ProjectsList: ProjectsListType = [
         Mockup: SmartupcycleMockup,
         Theme: "#22c55e",
         Status: "completed",
-        Link: "#",
+        Link: "https://github.com/Pranav-Sharma717/smartUpCycle1",
         Source: "https://github.com/Pranav-Sharma717/smartUpCycle1",
         Tech: [TechInfo.React, TechInfo.Node, TechInfo.MongoDB, TechInfo.TailwindCSS],
         features: [
@@ -290,7 +290,7 @@ export const ProjectsList: ProjectsListType = [
         Mockup: ARMSv3Mockup,
         Theme: "#3b82f6",
         Status: "completed",
-        Link: "#",
+        Link: "https://github.com/Pranav-Sharma717/HackathonProject",
         Source: "https://github.com/Pranav-Sharma717/HackathonProject",
         Tech: [TechInfo.Next, TechInfo.TypeScript, TechInfo.TailwindCSS],
         features: [
@@ -321,7 +321,7 @@ export const ProjectsList: ProjectsListType = [
         Mockup: VortexaMockup,
         Theme: "#f59e0b",
         Status: "completed",
-        Link: "#",
+        Link: "https://github.com/Pranav-Sharma717/Text-To-Handwritten",
         Source: "https://github.com/Pranav-Sharma717/Text-To-Handwritten",
         Tech: [TechInfo.Python],
         features: [

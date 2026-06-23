@@ -37,14 +37,20 @@ const ContactForm = () => {
             }
 
             setisLoading(true)
-            const mailRes = await emailjs.send(
-                import.meta.env.PUBLIC_EMAILJS_SERVICE_ID,
-                import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID,
-                templateParams,
-                import.meta.env.PUBLIC_EMAILJS_PUBLIC_KEY
-            );
+            const response = await fetch("https://formspree.io/gvpranav06@gmail.com", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    message: message
+                })
+            });
 
-            if (mailRes.status !== 200) {
+            if (!response.ok) {
                 throw new Error("😵 Message not Sent")
             }
 
@@ -55,7 +61,7 @@ const ContactForm = () => {
             EmailRef.current.value = ""
             MessageRef.current.value = ""
         } catch (error: { message: string } | any) {
-            setMailStatus({ status: false, message: error.message })
+            setMailStatus({ status: false, message: error.message || "An error occurred" })
         } finally {
             setTimeout(() => {
                 setMailStatus({ status: false, message: "" })

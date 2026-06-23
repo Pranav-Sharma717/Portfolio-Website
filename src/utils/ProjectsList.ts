@@ -1,20 +1,19 @@
 import type { ImageMetadata } from "astro";
 import {
     HtmlIcon, CssIcon, JsIcon, ReactIcon, NodeIcon, TsIcon, NextIcon, MysqlIcon, MongoIcon, RestApiIcon, TailwindIcon, PythonIcon
-} from "../assets/Icons"
+} from "../assets/Icons";
 
 import {
-    NextmartLogo, ArmsLogo, VortexaLogo
-} from "../assets/Logos"
+    NextmartLogo, ArmsLogo, VortexaLogo, PotholeLogo, ProductRecLogo, FinSageLogo, TrafficSignLogo, SmartupcycleLogo, CodingPuzzlesLogo, TextToHandwrittenLogo
+} from "../assets/Logos";
 
 import {
-    NextmartShots, Armsv3Shots, VortexaShots, EcommerceRecShots
-} from "../assets/Shots"
+    NextmartShots, Armsv3Shots, VortexaShots, EcommerceRecShots, PotholeShots, ProductRecShots, FinSageShots, TrafficSignShots, SmartupcycleShots, CodingPuzzlesShots, TextToHandwrittenShots
+} from "../assets/Shots";
 
 import {
-    ARMSv3Mockup, VortexaMockup
-} from "../assets/Mockup"
-
+    ARMSv3Mockup, VortexaMockup, PotholeMockup, ProductRecMockup, FinSageMockup, TrafficSignMockup, SmartupcycleMockup
+} from "../assets/Mockup";
 
 type ProjectsListType = {
     Name: string,
@@ -46,7 +45,7 @@ type ProjectsListType = {
         title: string,
         version: string
     }[]
-}[]
+}[];
 
 const TechInfo = {
     HTML: {
@@ -54,7 +53,17 @@ const TechInfo = {
         description: "HyperText Markup Language for creating the structure of web pages.",
         icon: HtmlIcon
     },
+    Html: {
+        title: "HTML",
+        description: "HyperText Markup Language for creating the structure of web pages.",
+        icon: HtmlIcon
+    },
     CSS: {
+        title: "CSS",
+        description: "Cascading Style Sheets for styling the presentation of HTML documents.",
+        icon: CssIcon
+    },
+    Css: {
         title: "CSS",
         description: "Cascading Style Sheets for styling the presentation of HTML documents.",
         icon: CssIcon
@@ -126,16 +135,43 @@ const FeatureList = {
         title: "SEO Optimization",
         description: "Crafted with SEO best practices, ensuring optimal visibility on search engines."
     }
-}
+};
 
 export const ProjectsList: ProjectsListType = [
+    {
+        Name: "Pothole Detection",
+        ShortDesc: "AI-powered system for detecting and classifying road potholes using computer vision techniques.",
+        Desc: "Developed a Pothole Detection system that utilizes deep learning models to identify and categorize road surface defects from images and video feeds. The system helps municipal authorities prioritize road maintenance and improve infrastructure safety.",
+        Logo: PotholeLogo,
+        Shot: PotholeShots,
+        Mockup: PotholeMockup,
+        Theme: "#8B4513",
+        Status: "completed",
+        Link: "#",
+        Source: "https://github.com/Pranav-Sharma717/Pothole_Detection",
+        Tech: [TechInfo.Python, TechInfo.RestApi, TechInfo.Html, TechInfo.Css, TechInfo.JavaScript],
+        features: [
+            {
+                title: "Real-time Detection",
+                description: "Processes video streams to detect potholes in real-time."
+            },
+            {
+                title: "Classification System",
+                description: "Categorizes potholes by severity and type for maintenance prioritization."
+            },
+            FeatureList.Responsive
+        ],
+        hideProject: false,
+        LogoSize: 45,
+        versions: []
+    },
     {
         Name: "Product Rec. System",
         ShortDesc: "Boosted user engagement and sales by creating a machine learning product recommendation system that delivered personalized suggestions.",
         Desc: "Developed a Product Recommendation System for an E-commerce website. This system boosted user engagement and sales by leveraging machine learning algorithms to deliver personalized product suggestions to users based on their behavior and preferences.",
-        Logo: NextmartLogo, // Placeholder
-        Shot: EcommerceRecShots,
-        Mockup: ARMSv3Mockup, // Placeholder
+        Logo: ProductRecLogo,
+        Shot: ProductRecShots,
+        Mockup: ProductRecMockup,
         Theme: "#090b0b",
         Status: "completed",
         Link: "#",
@@ -153,16 +189,16 @@ export const ProjectsList: ProjectsListType = [
             FeatureList.Responsive
         ],
         hideProject: false,
-        LogoSize: 40,
+        LogoSize: 45,
         versions: []
     },
     {
         Name: "FinSage",
         ShortDesc: "A web platform that leverages LLMs and financial models to summarize government budgets and provide personalized financial guidance.",
         Desc: "FinSage is a web platform that leverages Large Language Models (LLMs) and financial models to summarize government budgets and provide personalized financial guidance. It helps users understand tax slabs, optimize asset allocation, and develop effective savings strategies for enhanced financial inclusion.",
-        Logo: ArmsLogo, // Placeholder
-        Shot: Armsv3Shots, // Placeholder
-        Mockup: ARMSv3Mockup, // Placeholder
+        Logo: FinSageLogo,
+        Shot: FinSageShots,
+        Mockup: FinSageMockup,
         Theme: "#FFF",
         Status: "completed",
         Link: "#",
@@ -180,16 +216,16 @@ export const ProjectsList: ProjectsListType = [
             FeatureList.Responsive
         ],
         hideProject: false,
-        LogoSize: 50,
+        LogoSize: 45,
         versions: []
     },
     {
         Name: "Traffic Sign Recognition",
         ShortDesc: "Built a Convolutional Neural Network for traffic sign classification using the GTSRB dataset (43 classes, 50k+ images). Achieved 98% test accuracy.",
         Desc: "Built a Convolutional Neural Network (CNN) for traffic sign classification using the GTSRB dataset (43 classes, 50,000+ images).  The model achieved 98% test accuracy, outperforming baseline models, demonstrating proficiency in Deep Learning and Computer Vision.",
-        Logo: VortexaLogo, // Placeholder
-        Shot: VortexaShots, // Placeholder
-        Mockup: VortexaMockup, // Placeholder
+        Logo: TrafficSignLogo,
+        Shot: TrafficSignShots,
+        Mockup: TrafficSignMockup,
         Theme: "#fff",
         Status: "completed",
         Link: "#",
@@ -207,16 +243,16 @@ export const ProjectsList: ProjectsListType = [
             FeatureList.Responsive
         ],
         hideProject: false,
-        LogoSize: 50,
+        LogoSize: 45,
         versions: []
     },
     {
         Name: "Smartupcycle",
         ShortDesc: "A full-stack web platform for upcycling ideas, analyzing carbon footprint, and sharing DIY creations.",
         Desc: "smartUpCycle is a full-stack web platform that:\n\nSuggests upcycling ideas from common waste items.\nAnalyzes your personal carbon footprint.\nLets users post and showcase their DIY upcycled creations.\nEncourages sustainable behavior through community and gamification.",
-        Logo: NextmartLogo, // Placeholder
-        Shot: NextmartShots, // Placeholder
-        Mockup: ARMSv3Mockup, // Placeholder
+        Logo: SmartupcycleLogo,
+        Shot: SmartupcycleShots,
+        Mockup: SmartupcycleMockup,
         Theme: "#22c55e",
         Status: "completed",
         Link: "#",
@@ -249,9 +285,9 @@ export const ProjectsList: ProjectsListType = [
         Name: "Coding Puzzles",
         ShortDesc: "A revolutionary platform for coding enthusiasts, offering interactive visualizations and beginner-friendly articles.",
         Desc: "A revolutionary platform for coding enthusiasts, problem solvers, and anyone eager to unlock the mysteries of efficient programming. Coding Puzzles isn’t just a tool; it’s a teacher. With every feature, we aim to remove intimidation from coding and replace it with confidence.",
-        Logo: ArmsLogo, // Placeholder
-        Shot: Armsv3Shots, // Placeholder
-        Mockup: ARMSv3Mockup, // Placeholder
+        Logo: CodingPuzzlesLogo,
+        Shot: CodingPuzzlesShots,
+        Mockup: ARMSv3Mockup,
         Theme: "#3b82f6",
         Status: "completed",
         Link: "#",
@@ -280,9 +316,9 @@ export const ProjectsList: ProjectsListType = [
         Name: "Text to Handwritten",
         ShortDesc: "A Python tool that converts typed text into a handwritten document.",
         Desc: "A simple yet powerful tool built using Python to convert digital text into a handwritten format. It makes creating assignments and creative documents easier by producing a natural handwriting aesthetic from any provided text.",
-        Logo: VortexaLogo, // Placeholder
-        Shot: VortexaShots, // Placeholder
-        Mockup: VortexaMockup, // Placeholder
+        Logo: TextToHandwrittenLogo,
+        Shot: TextToHandwrittenShots,
+        Mockup: VortexaMockup,
         Theme: "#f59e0b",
         Status: "completed",
         Link: "#",
@@ -300,7 +336,7 @@ export const ProjectsList: ProjectsListType = [
             FeatureList.Responsive
         ],
         hideProject: false,
-        LogoSize: 50,
+        LogoSize: 45,
         versions: []
     }
-]
+];

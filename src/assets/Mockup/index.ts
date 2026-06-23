@@ -7,3 +7,10 @@ export { default as SrinivasMockup } from "./SEM-Mockup.webp"
 export { default as VortexaMockup } from "./Vortexa-Mockup.webp"
 export { default as XreconMockup } from "./Xrecon-Mockup.webp"
 export { default as YoatubeMockup } from "./Yoatube-Mockup.webp"
+export { default as PotholeMockup } from "./PotholeMockup.webp"
+export { default as ProductRecMockup } from "./ProductRecMockup.webp"
+export { default as FinSageMockup } from "./FinSageMockup.webp"
+export { default as TrafficSignMockup } from "./TrafficSignMockup.webp"
+export { default as SmartupcycleMockup } from "./SmartupcycleMockup.webp"
+
+

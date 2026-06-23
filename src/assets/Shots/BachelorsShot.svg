@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 437 246" width="437" height="246">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E3A8A" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="437" height="246" fill="url(#bgGrad)" />
+  <path d="M 0,20 L 437,20 M 0,40 L 437,40 M 0,60 L 437,60 M 0,80 L 437,80 M 0,100 L 437,100 M 0,120 L 437,120 M 0,140 L 437,140 M 0,160 L 437,160 M 0,180 L 437,180 M 0,200 L 437,200 M 0,220 L 437,220" stroke="#334155" stroke-width="0.5" opacity="0.3" />
+  <path d="M 40,0 L 40,246 M 80,0 L 80,246 M 120,0 L 120,246 M 160,0 L 160,246 M 200,0 L 200,246 M 240,0 L 240,246 M 280,0 L 280,246 M 320,0 L 320,246 M 360,0 L 360,246 M 400,0 L 400,246" stroke="#334155" stroke-width="0.5" opacity="0.3" />
+  <circle cx="150" cy="80" r="100" fill="url(#glowGrad)" opacity="0.4" />
+  <circle cx="350" cy="180" r="120" fill="#06B6D4" opacity="0.15" />
+  <text x="218" y="130" font-family="system-ui, sans-serif" font-size="20" fill="#E2E8F0" font-weight="bold" letter-spacing="4" text-anchor="middle" opacity="0.75">VIT BHOPAL UNIVERSITY</text>
+  <text x="218" y="160" font-family="system-ui, sans-serif" font-size="12" fill="#3B82F6" letter-spacing="2" text-anchor="middle" opacity="0.8">BACHELORS DEGREE (2023-2027)</text>
+</svg>

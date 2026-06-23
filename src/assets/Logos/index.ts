@@ -13,3 +13,18 @@ export { default as SrinivasLogo } from "./SrinivasLogo.svg"
 export { default as XReconLogo } from "./XReconLogo.svg"
 export { default as YoatubeLogo } from "./YoatubeLogo.svg"
 export { default as VortexaLogo } from "./VortexaLogo.svg"
+export { default as PotholeLogo } from "./PotholeLogo.webp"
+export { default as ProductRecLogo } from "./ProductRecLogo.webp"
+export { default as FinSageLogo } from "./FinSageLogo.webp"
+export { default as TrafficSignLogo } from "./TrafficSignLogo.webp"
+export { default as SmartupcycleLogo } from "./SmartupcycleLogo.webp"
+export { default as CodingPuzzlesLogo } from "./CodingPuzzlesLogo.webp"
+export { default as DevmonkLogo } from "./DevmonkLogo.svg"
+export { default as DreamSoft4uLogo } from "./DreamSoft4uLogo.svg"
+export { default as TextToHandwrittenLogo } from "./TextToHandwrittenLogo.svg"
+export { default as KVLogo } from "./KVLogo.svg"
+export { default as VITLogo } from "./VITLogo.svg"
+
+
+
+

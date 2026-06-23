@@ -1,0 +1,98 @@
+---
+import { ExternalLinkIcon } from "lucide-preact";
+import { SectionTitle } from "./UI";
+import { Image } from "astro:assets";
+import { ExperienceList } from "../utils/ExperienceList";
+---
+
+<section
+    id="experience"
+    class="w-full min-h-screen px-6 py-4 pt-14 bg-background flex flex-col items-center"
+>
+    <SectionTitle title="My Experience" color="primary">
+        <div
+            class="Fade_Up relative w-full grid grid-cols-1 md:grid-cols-2 gap-8 lg:px-12 pb-6 max-w-5xl mx-auto mt-6"
+        >
+            {
+                ExperienceList?.map((exp) => {
+                    if (exp?.hideExperience) return;
+
+                    return (
+                        <div class="Project_Stagger Card_Main w-full h-fit flex_center flex-col bg-cardGradient overflow-hidden rounded-[0.4em] mt-3 opacity-0">
+                            <a
+                                href={exp.Link}
+                                target="_blank"
+                                rel="noreferrer"
+                                class="Projects_Preview w-full relative rounded-[0.4em]"
+                            >
+                                <Image
+                                    class="Card_Image bg-cover opacity-50 transition-opacity w-full"
+                                    style={{
+                                        borderRadius: "0.4em 0.4em 0 100%",
+                                    }}
+                                    src={exp.Shot}
+                                    alt={`Experience_ScreenShot_${exp.Company}`}
+                                    widths={[346, exp.Shot.width]}
+                                    sizes={`(max-width: 720px) 346px, ${exp.Shot.width}px`}
+                                    loading="lazy"
+                                />
+                                <Image
+                                    class="absolute left-6 bottom-6"
+                                    src={exp.Logo}
+                                    alt={`Experience_Logo_${exp.Company}`}
+                                    width={exp.LogoSize}
+                                    height={exp.LogoSize}
+                                    loading="lazy"
+                                />
+                            </a>
+                            <div class="w-full text-[0.95em] px-4 pb-4">
+                                <div class="flex justify-between items-start pt-3">
+                                    <div class="flex flex-col">
+                                        <h3 class="font-ubuntu text-[1.25em] font-bold leading-tight text-white">
+                                            {exp.Name}
+                                        </h3>
+                                        <span class="text-secondary text-[0.9em] font-medium mt-1">
+                                            {exp.Company}
+                                        </span>
+                                    </div>
+                                    <div class="flex pt-1">
+                                        <a
+                                            href={exp.Link}
+                                            title={`${exp.Company} Website`}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            class="Projects_Link flex"
+                                        >
+                                            <ExternalLinkIcon aria-hidden="true" />
+                                            <span class="sr-only">
+                                                Website for {exp.Company}
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-justify text-[0.925em] text-gray-300 mt-3 leading-relaxed">
+                                    {exp.Desc}
+                                </p>
+
+                                <div class="w-full flex_center gap-4 py-3 mt-2 border-t border-[#e5e7eb0d]">
+                                    {exp.Tech.map((tech) => {
+                                        return (
+                                            <Image
+                                                src={tech.icon}
+                                                alt={`TechIcon ${tech.title}`}
+                                                width={22}
+                                                height={22}
+                                                loading="lazy"
+                                            />
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        </div>
+                    );
+                })
+            }
+        </div>
+    </SectionTitle>
+</section>

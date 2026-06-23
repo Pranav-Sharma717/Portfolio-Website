@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 437 246" width="437" height="246">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1E1E" />
+      <stop offset="50%" stop-color="#2D1F10" />
+      <stop offset="100%" stop-color="#121212" />
+    </linearGradient>
+    <linearGradient id="paperGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF0" />
+      <stop offset="100%" stop-color="#F9F5DE" />
+    </linearGradient>
+  </defs>
+  <rect width="437" height="246" fill="url(#bgGrad)" />
+  <rect x="15" y="25" width="195" height="196" rx="6" fill="#181818" stroke="#3F3F3F" stroke-width="1" />
+  <circle cx="30" cy="38" r="4" fill="#EF4444" />
+  <circle cx="42" cy="38" r="4" fill="#F59E0B" />
+  <circle cx="54" cy="38" r="4" fill="#10B981" />
+  <text x="30" y="65" font-family="monospace" font-size="9" fill="#10B981"># Input Text</text>
+  <text x="30" y="80" font-family="monospace" font-size="8" fill="#E2E8F0">def convert_to_handwritten(text):</text>
+  <text x="45" y="95" font-family="monospace" font-size="8" fill="#E2E8F0">lines = split_text(text)</text>
+  <text x="45" y="110" font-family="monospace" font-size="8" fill="#E2E8F0">for line in lines:</text>
+  <text x="60" y="125" font-family="monospace" font-size="8" fill="#E2E8F0">draw_handwriting(line)</text>
+  <text x="30" y="145" font-family="monospace" font-size="8" fill="#F59E0B">convert_to_handwritten("Hello World")</text>
+
+  <rect x="227" y="25" width="195" height="196" rx="6" fill="url(#paperGrad)" stroke="#E4DCA9" stroke-width="1" />
+  <line x1="227" y1="55" x2="422" y2="55" stroke="#93C5FD" stroke-width="0.5" />
+  <line x1="227" y1="75" x2="422" y2="75" stroke="#93C5FD" stroke-width="0.5" />
+  <line x1="227" y1="95" x2="422" y2="95" stroke="#93C5FD" stroke-width="0.5" />
+  <line x1="227" y1="115" x2="422" y2="115" stroke="#93C5FD" stroke-width="0.5" />
+  <line x1="227" y1="135" x2="422" y2="135" stroke="#93C5FD" stroke-width="0.5" />
+  <line x1="227" y1="155" x2="422" y2="155" stroke="#93C5FD" stroke-width="0.5" />
+  <line x1="227" y1="175" x2="422" y2="175" stroke="#93C5FD" stroke-width="0.5" />
+  <line x1="227" y1="195" x2="422" y2="195" stroke="#93C5FD" stroke-width="0.5" />
+  <line x1="250" y1="25" x2="250" y2="221" stroke="#FCA5A5" stroke-width="1" />
+
+  <text x="255" y="50" font-family="'Georgia', serif" font-style="italic" font-size="12" fill="#1E3A8A" opacity="0.8">Text to Handwriting</text>
+  <text x="255" y="70" font-family="'Georgia', serif" font-style="italic" font-size="11" fill="#1E3A8A" opacity="0.8">This tool converts typed</text>
+  <text x="255" y="90" font-family="'Georgia', serif" font-style="italic" font-size="11" fill="#1E3A8A" opacity="0.8">digital text into beautiful</text>
+  <text x="255" y="110" font-family="'Georgia', serif" font-style="italic" font-size="11" fill="#1E3A8A" opacity="0.8">cursive handwriting.</text>
+  <text x="255" y="130" font-family="'Georgia', serif" font-style="italic" font-size="11" fill="#1E3A8A" opacity="0.8">Ideal for assignments</text>
+  <text x="255" y="150" font-family="'Georgia', serif" font-style="italic" font-size="11" fill="#1E3A8A" opacity="0.8">and letters!</text>
+</svg>

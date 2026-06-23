@@ -15,3 +15,18 @@ export { default as NextmartShots } from "./NextMart.webp"
 export { default as VortexaShots } from "./Vortexa.webp"
 export { default as Armsv3Shots } from "./ARMSv3.webp"
 export { default as EcommerceRecShots } from "./EcommerceRec.png"
+export { default as PotholeShots } from "./PotholeShots.webp"
+export { default as ProductRecShots } from "./ProductRecShots.webp"
+export { default as FinSageShots } from "./FinSageShots.webp"
+export { default as TrafficSignShots } from "./TrafficSignShots.webp"
+export { default as SmartupcycleShots } from "./SmartupcycleShots.webp"
+export { default as CodingPuzzlesShots } from "./CodingPuzzlesShots.webp"
+export { default as DevmonkShot } from "./DevmonkShot.svg"
+export { default as DreamSoft4uShot } from "./DreamSoft4uShot.svg"
+export { default as TextToHandwrittenShots } from "./TextToHandwrittenShots.svg"
+export { default as SchoolingShot } from "./SchoolingShot.svg"
+export { default as BachelorsShot } from "./BachelorsShot.svg"
+
+
+
+

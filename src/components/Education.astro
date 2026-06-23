@@ -1,0 +1,90 @@
+---
+import { ExternalLinkIcon } from "lucide-preact";
+import { SectionTitle } from "./UI";
+import { Image } from "astro:assets";
+import { EducationList } from "../utils/EducationList";
+---
+
+<section
+    id="education"
+    class="w-full min-h-screen px-6 py-4 pt-14 bg-background flex flex-col items-center"
+>
+    <SectionTitle title="My Education" color="secondary">
+        <div
+            class="Fade_Up relative w-full grid grid-cols-1 md:grid-cols-2 gap-8 lg:px-12 pb-6 max-w-5xl mx-auto mt-6"
+        >
+            {
+                EducationList?.map((edu) => {
+                    return (
+                        <div class="Project_Stagger Card_Main w-full h-fit flex_center flex-col bg-cardGradient overflow-hidden rounded-[0.4em] mt-3 opacity-0">
+                            <a
+                                href={edu.Link}
+                                target="_blank"
+                                rel="noreferrer"
+                                class="Projects_Preview w-full relative rounded-[0.4em]"
+                            >
+                                <Image
+                                    class="Card_Image bg-cover opacity-50 transition-opacity w-full"
+                                    style={{
+                                        borderRadius: "0.4em 0.4em 0 100%",
+                                    }}
+                                    src={edu.Shot}
+                                    alt={`Education_ScreenShot_${edu.Institution}`}
+                                    widths={[346, edu.Shot.width]}
+                                    sizes={`(max-width: 720px) 346px, ${edu.Shot.width}px`}
+                                    loading="lazy"
+                                />
+                                <Image
+                                    class="absolute left-6 bottom-6"
+                                    src={edu.Logo}
+                                    alt={`Education_Logo_${edu.Institution}`}
+                                    width={edu.LogoSize}
+                                    height={edu.LogoSize}
+                                    loading="lazy"
+                                />
+                            </a>
+                            <div class="w-full text-[0.95em] px-5 pb-6">
+                                <div class="flex justify-between items-start pt-3">
+                                    <div class="flex flex-col">
+                                        <h3 class="font-ubuntu text-[1.25em] font-bold leading-tight text-white">
+                                            {edu.Degree}
+                                        </h3>
+                                        <span class="text-secondary text-[0.9em] font-medium mt-1">
+                                            {edu.Institution}
+                                        </span>
+                                    </div>
+                                    <div class="flex pt-1">
+                                        <a
+                                            href={edu.Link}
+                                            title={`${edu.Institution} Website`}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            class="Projects_Link flex"
+                                        >
+                                            <ExternalLinkIcon aria-hidden="true" />
+                                            <span class="sr-only">
+                                                Website for {edu.Institution}
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <span class="text-orange-400 text-[0.8em] font-medium block mt-2">
+                                    Timeline: {edu.Timeline}
+                                </span>
+
+                                <ul class="text-start text-[0.925em] text-gray-300 mt-4 leading-relaxed list-disc list-inside flex flex-col gap-2 border-t border-[#e5e7eb0d] pt-3">
+                                    {edu.Details.map((detail) => (
+                                        <li class="pl-1 list-none before:content-['•'] before:text-secondary before:mr-2 before:font-bold">
+                                            {detail}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    );
+                })
+            }
+        </div>
+    </SectionTitle>
+</section>
